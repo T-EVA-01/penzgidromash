@@ -1,0 +1,14 @@
+include ../common/pug/mixins
+
+
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+        title TestOnly
+    body
+        include ../components/header/header
+        include ../components/window-menu/window-menu
+        block content
+        include ../components/footer/footer
+
